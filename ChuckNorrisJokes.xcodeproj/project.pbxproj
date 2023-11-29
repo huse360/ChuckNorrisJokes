@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF5055132B16D3FF00AD695E /* JokesService+DataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5055122B16D3FF00AD695E /* JokesService+DataPublisher.swift */; };
 		D228A084231334E200EB6975 /* MockJokesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228A083231334E200EB6975 /* MockJokesService.swift */; };
 		D228A08623134C6E00EB6975 /* TestJoke.json in Resources */ = {isa = PBXBuildFile; fileRef = D228A08523134B3B00EB6975 /* TestJoke.json */; };
 		D23410E22316ADD800BD8BA7 /* ChuckNorrisJokesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D23410E02316ADD800BD8BA7 /* ChuckNorrisJokesModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF5055122B16D3FF00AD695E /* JokesService+DataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokesService+DataPublisher.swift"; sourceTree = "<group>"; };
 		D228A083231334E200EB6975 /* MockJokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJokesService.swift; sourceTree = "<group>"; };
 		D228A08523134B3B00EB6975 /* TestJoke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJoke.json; sourceTree = "<group>"; };
 		D23410DE2316ADD800BD8BA7 /* ChuckNorrisJokesModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChuckNorrisJokesModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				D2568BBC230B071600FFB4E3 /* JokesService.swift */,
+				CF5055122B16D3FF00AD695E /* JokesService+DataPublisher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			files = (
 				D23410F02316AE7500BD8BA7 /* URLComponents+.swift in Sources */,
 				D23410F32316B1D100BD8BA7 /* JokeServiceDataPublisher.swift in Sources */,
+				CF5055132B16D3FF00AD695E /* JokesService+DataPublisher.swift in Sources */,
 				D23410EB2316AE6A00BD8BA7 /* Joke.swift in Sources */,
 				D23410EE2316AE7500BD8BA7 /* JokesService.swift in Sources */,
 				D23410ED2316AE7500BD8BA7 /* JokesViewModel.swift in Sources */,

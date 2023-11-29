@@ -77,7 +77,8 @@ struct JokeView: View {
       self.reset()
     })
   }
-  
+
+  @ObservedObject private var viewModel = JokesViewModel()
   @State private var showJokeView = false
   @State private var showFetchingJoke = false
   @State private var cardTranslation: CGSize = .zero
@@ -89,7 +90,7 @@ struct JokeView: View {
   private var circleDiameter: CGFloat { bounds.width * 0.9 }
   
   private var jokeCardView: some View {
-    JokeCardView()
+    JokeCardView(viewModel: viewModel)
       .background(Color.white)
       .cornerRadius(20)
       .shadow(radius: 10)

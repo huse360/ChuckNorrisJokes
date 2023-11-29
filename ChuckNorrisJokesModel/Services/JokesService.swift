@@ -34,7 +34,7 @@ import Foundation
 import Combine
 
 public struct JokesService {
-  private var url: URL {
+  internal var url: URL {
     urlComponents.url!
   }
   
