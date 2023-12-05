@@ -40,10 +40,13 @@ struct SavedJokesView: View {
       NavigationView {
         List {
           ForEach(jokes, id: \.self) { joke in
-            Text(joke.value ?? "")
+            Text(joke.value ?? "N/A")
           }
           .onDelete { indices in
-            
+            self.jokes.delete(
+              at: indices,
+              inViewContext: self.viewContext
+            )
           }
         }
         .navigationBarTitle("Saved Jokes")
