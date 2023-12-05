@@ -34,12 +34,13 @@ import SwiftUI
 import ChuckNorrisJokesModel
 
 struct SavedJokesView: View {
+  @Environment(\.managedObjectContext) private var viewContext
   var body: some View {
     VStack {
       NavigationView {
         List {
           ForEach(jokes, id: \.self) { joke in
-            Text(joke)
+            Text(joke.value ?? "")
           }
           .onDelete { indices in
             
@@ -49,8 +50,16 @@ struct SavedJokesView: View {
       }
     }
   }
-    
-  private var jokes = [String]()
+
+  @FetchRequest(
+    sortDescriptors: [
+      NSSortDescriptor(
+        keyPath: \JokeManagedObject.value,
+        ascending: true
+      )
+    ],
+    animation: .default
+  ) private var jokes: FetchedResults<JokeManagedObject>
 }
 
 struct SavedJokesView_Previews: PreviewProvider {
